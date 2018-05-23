@@ -1,10 +1,23 @@
 {
   "name": "vue-loading-balls",
   "version": "0.1.0",
-  "private": true,
+  "description": "A bouncing balls loading component for Vue.js with smooth SGV animation",
+  "keywords": [
+    "vue", "vuejs", "loading", "SVG", "animation", "component", "spinner"
+  ],
+  "homepage": "https://github.com/rlmckenney/vue-loading-balls#readme",
+  "bugs": "https://github.com/rlmckenney/vue-loading-balls/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Robert McKenney",
+    "email": "robert@mckenney.ca"
+  },
+  "main": "./dist/vue-loading-balls.common.js",
+  "repository": "github:rlmckenney/vue-loading-balls",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name vue-loading-balls src/components/VueLoadingBalls.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
