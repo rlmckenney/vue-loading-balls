@@ -1,6 +1,6 @@
 # Vue Loading Balls
 
-## Bouncing balls loading animation component for Vue.js 2.x with smooth SGV animation
+A bouncing balls loading animation component for Vue.js 2.x that uses smooth SGV animation for natural looking motion.
 
 Inspired by Nash Vail's article, [How you can use simple trigonometry to create better loaders](https://www.codementor.io/nashvail/how-you-can-use-simple-trigonometry-to-create-better-loaders-jntt54acz).
 
@@ -88,3 +88,11 @@ Now you should see ...
 | height | height in px of the enclosing SVG element                             | 300     | Number \| String |
 
 Step timing and amplitude are automatically calculated to ensure smooth, natural looking animation.
+
+## Versioning
+
+We use [SemVer](https://semver.org) for versioning. For the versions available, see the [tags on this repository](https://github.com/rlmckenney/vue-loading-balls/tags).
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rlmckenney/vue-loading-balls/LICENSE.md) file for details
