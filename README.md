@@ -1,6 +1,6 @@
 # Vue Loading Balls
 
-## Bouncing balls loading component for Vue.js with smooth SGV animation
+## Bouncing balls loading animation component for Vue.js 2.x with smooth SGV animation
 
 Inspired by Nash Vail's article, [How you can use simple trigonometry to create better loaders](https://www.codementor.io/nashvail/how-you-can-use-simple-trigonometry-to-create-better-loaders-jntt54acz).
 
@@ -10,7 +10,9 @@ And, Sarah Drasner's book on [SVG Animations](http://shop.oreilly.com/product/06
 >
 > -- _Richard Larson of MIT_
 
-## Browser Support
+## Compatibility
+
+Vue.js 2.x
 
 ## Installation
 
@@ -53,7 +55,7 @@ In the template section, simply drop in the component element `<loading-balls />
 
 You should now see ...
 
--- insert gif here --
+![three black balls bouncing vertically](https://github.com/rlmckenney/vue-loading-balls/raw/master/public/loading-balls-3-black.gif)
 
 ### Example with options
 
@@ -73,16 +75,16 @@ You should now see ...
 
 Now you should see ...
 
--- insert gif here --
+![five purple balls bouncing vertically](https://github.com/rlmckenney/vue-loading-balls/raw/master/public/loading-balls-5-purple.gif)
 
 ## Configurable options:
 
-| Key    | Description                               | Default | Value                                                   |
-| ------ | ----------------------------------------- | ------- | ------------------------------------------------------- |
-| count  | number of balls                           | 3       | Number \| String                                        |
-| color  | colour of the balls                       | #333333 | String (_Any valid CSS color value - hex, rgb, or hsl_) |
-| radius | radius of the balls in px                 | 10      | Number \| String                                        |
-| width  | width in px of the enclosing SVG element  | 300     | Number \| String                                        |
-| height | height in px of the enclosing SVG element | 300     | Number \| String                                        |
+| Key    | Description                                                           | Default | Value            |
+| ------ | --------------------------------------------------------------------- | ------- | ---------------- |
+| count  | number of balls                                                       | 3       | Number \| String |
+| color  | colour of the balls -- any valid CSS color value (_hex, rgb, or hsl_) | #333333 | String           |
+| radius | radius of the balls in px                                             | 10      | Number \| String |
+| width  | width in px of the enclosing SVG element                              | 300     | Number \| String |
+| height | height in px of the enclosing SVG element                             | 300     | Number \| String |
 
 Step timing and amplitude are automatically calculated to ensure smooth, natural looking animation.

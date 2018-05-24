@@ -1,7 +1,7 @@
 {
   "name": "vue-loading-balls",
   "version": "0.1.0",
-  "description": "A bouncing balls loading component for Vue.js with smooth SGV animation",
+  "description": "A bouncing balls loading animation component for Vue.js 2.x with smooth SGV animation",
   "keywords": [
     "vue", "vuejs", "loading", "SVG", "animation", "component", "spinner"
   ],
