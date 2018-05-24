@@ -63,7 +63,7 @@ You should now see ...
     v-if="isLoading"
     :count="4"
     :radius="8"
-    :color="#4b0082"
+    color="#4b0082"
   />
   <main v-else>
     <h1>Main content here ...</h1>
@@ -79,10 +79,10 @@ Now you should see ...
 
 | Key    | Description                               | Default | Value                                                   |
 | ------ | ----------------------------------------- | ------- | ------------------------------------------------------- |
-| count  | number of balls                           | 3       | Number                                                  |
+| count  | number of balls                           | 3       | Number \| String                                        |
 | color  | colour of the balls                       | #333333 | String (_Any valid CSS color value - hex, rgb, or hsl_) |
-| radius | radius of the balls in px                 | 10      | Number                                                  |
-| width  | width in px of the enclosing SVG element  | 300     | Number                                                  |
-| height | height in px of the enclosing SVG element | 300     | Number                                                  |
+| radius | radius of the balls in px                 | 10      | Number \| String                                        |
+| width  | width in px of the enclosing SVG element  | 300     | Number \| String                                        |
+| height | height in px of the enclosing SVG element | 300     | Number \| String                                        |
 
 Step timing and amplitude are automatically calculated to ensure smooth, natural looking animation.

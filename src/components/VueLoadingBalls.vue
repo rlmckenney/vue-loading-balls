@@ -22,37 +22,49 @@
 export default {
   name: 'loading-balls',
   props: {
-    width: { type: Number, default: 300 },
-    height: { type: Number, default: 150 },
+    width: { type: [Number, String], default: 300 },
+    height: { type: [Number, String], default: 150 },
     color: { type: String, default: '#333333' },
-    count: { type: Number, default: 3 },
-    radius: { type: Number, default: 10 }
+    count: { type: [Number, String], default: 3 },
+    radius: { type: [Number, String], default: 10 }
   },
   data: () => ({
     currentAnimationTime: 0,
     balls: []
   }),
   computed: {
+    $_width () {
+      return parseInt(this.width)
+    },
+    $_height () {
+      return parseInt(this.height)
+    },
+    $_count () {
+      return parseInt(this.count)
+    },
+    $_radius () {
+      return parseInt(this.radius)
+    },
     centerY () {
-      return Math.floor(this.height / 2)
+      return Math.floor(this.$_height / 2)
     },
     centerX () {
-      return Math.floor(this.width / 2)
+      return Math.floor(this.$_width / 2)
     },
     amplitude () {
-      return Math.min(Math.floor(this.height / 4), this.radius * 4)
+      return Math.min(Math.floor(this.$_height / 4), this.$_radius * 4)
     }
   },
   methods: {
     initBalls () {
-      const offsetX = this.radius * 3
-      const offsetMultiple = Math.floor(this.count / 2)
-      const offsetEven = !(this.count % 2) ? Math.floor(offsetX / 2) : 0
-      for (let i = 0; i < this.count; i++) {
+      const offsetX = this.$_radius * 3
+      const offsetMultiple = Math.floor(this.$_count / 2)
+      const offsetEven = !(this.$_count % 2) ? Math.floor(offsetX / 2) : 0
+      for (let i = 0; i < this.$_count; i++) {
         this.balls.push({
           cx: this.centerX - offsetX * (i - offsetMultiple) - offsetEven,
           cy: this.centerY,
-          r: this.radius,
+          r: this.$_radius,
           fill: this.color
         })
       }
