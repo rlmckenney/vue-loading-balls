@@ -95,4 +95,4 @@ We use [SemVer](https://semver.org) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rlmckenney/vue-loading-balls/LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/rlmckenney/vue-loading-balls/blob/master/LICENSE.md) file for details
