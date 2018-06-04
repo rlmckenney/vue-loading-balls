@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'loading-balls',
+  name: 'VueLoadingBalls',
   props: {
     width: { type: [Number, String], default: 300 },
     height: { type: [Number, String], default: 150 },

@@ -1,9 +1,16 @@
 {
   "name": "vue-loading-balls",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A bouncing balls loading animation component for Vue.js 2.x with smooth SGV animation",
   "keywords": [
-    "vue", "vuejs", "loading", "SVG", "animation", "component", "spinner"
+    "vue",
+    "vue2",
+    "vuejs",
+    "loading",
+    "SVG",
+    "animation",
+    "component",
+    "spinner"
   ],
   "homepage": "https://github.com/rlmckenney/vue-loading-balls#readme",
   "bugs": "https://github.com/rlmckenney/vue-loading-balls/issues",
@@ -12,22 +19,27 @@
     "name": "Robert McKenney",
     "email": "robert@mckenney.ca"
   },
-  "main": "./dist/vue-loading-balls.common.js",
+  "main": "dist/lib/VueLoadingBalls.umd.js",
+  "browser": "dist/lib/VueLoadingBalls.umd.js",
+  "files": [
+    "dist"
+  ],
   "repository": "github:rlmckenney/vue-loading-balls",
   "scripts": {
     "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build",
-    "build-lib": "vue-cli-service build --target lib --name vue-loading-balls src/components/VueLoadingBalls.vue",
+    "build-lib": "vue-cli-service build --mode production --target lib --name VueLoadingBalls --dest dist/lib/ src/components/VueLoadingBalls.vue",
+    "build-wc": "vue-cli-service build --mode production --target wc --name vue-loading-balls --dest dist/wc/ src/components/VueLoadingBalls.vue",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "vue": "^2.5.16"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.0.0-beta.11",
-    "@vue/cli-plugin-eslint": "^3.0.0-beta.11",
-    "@vue/cli-service": "^3.0.0-beta.11",
-    "@vue/eslint-config-standard": "^3.0.0-beta.11",
+    "@vue/cli-plugin-babel": "^3.0.0-beta.15",
+    "@vue/cli-plugin-eslint": "^3.0.0-beta.15",
+    "@vue/cli-service": "^3.0.0-beta.15",
+    "@vue/eslint-config-standard": "^3.0.0-beta.15",
     "lint-staged": "^6.0.0",
     "vue-template-compiler": "^2.5.16"
   },
